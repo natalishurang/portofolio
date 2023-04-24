@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <!-- link untuk font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet" />
+
+    <!-- link ke css -->
+    <link rel="stylesheet" href="/portofolio/folder_css/style_portofolio.css" />
+  </head>
+
+  <body>
+    <!--home page-->
+    <div id="container">
+      <div id="header">
+        <nav>
+          <!-- bagian logo -->
+          <div class="logo">
+            <h1>Natalis Hurang</h1>
+          </div>
+          <!-- bagian menubar click -->
+          <ul>
+            <li>
+              <a onclick="showHome()" href="#" id="home"> Home </a>
+            </li>
+
+            <li>
+              <a onclick="showAbout()" href="#" id="about"> About </a>
+            </li>
+
+            <li>
+              <a onclick="showProject()" href="#" id="projects"> Projects </a>
+            </li>
+
+            <li>
+              <a onclick="showContact()" href="#" id="contact"> Contact </a>
+            </li>
+          </ul>
+
+          <!-- bagian menu saat tampilan mobile -->
+          <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+
+      <div id="main">
+        <!-- tittle untuk page saat ini -->
+        <div class="jumbotron">
+          <div class="tittle-page">
+            <h1>My Portofolio</h1>
+          </div>
+
+          <div class="image-1">
+            <img class="image-profile" src="/portofolio/assets-portofolio/IMG-20211215-WA0062.jpg" alt="Natalis Hurang" />
+          </div>
+
+          <div class="description">
+            <h3>Christianus Natalis Hurang</h3>
+            <p>Beginner | Software Engineer</p>
+          </div>
+
+          <div class="image-slideshow">
+            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide1.jpg" alt="slideshow 1" />
+            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide2.jpg" alt="slideshow 2" />
+            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide3.jpg" alt="slideshow 3" />
+            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide4.jpg" alt="slideshow 4" />
+          </div>
+
+          <!-- button click -->
+          <div class="button-slideshow">
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="rgb(245, 171, 208)"
+            fill-opacity="1"
+            d="M0,64L48,96C96,128,192,192,288,202.7C384,213,480,171,576,138.7C672,107,768,85,864,69.3C960,53,1056,43,1152,64C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div id="footer">
+        <p>Created by <a href="https://www.instagram.com/natalishurang1/"> Natalis Hurang </a>| in 2023</p>
+      </div>
+    </div>
+
+    <!-- link ke javascript -->
+    <script src="/portofolio/folder_js/interaksi_portofolio.js"></script>
+  </body>
+</html>
