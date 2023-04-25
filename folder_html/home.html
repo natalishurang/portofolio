@@ -17,8 +17,8 @@
 
   <body>
     <!--home page-->
-    <div id="container">
-      <div id="header">
+    <header>
+      <div class="header-page">
         <nav>
           <!-- bagian logo -->
           <div class="logo">
@@ -52,49 +52,44 @@
           </div>
         </nav>
       </div>
+    </header>
 
-      <div id="main">
+    <main>
+      <!-- jumbotron -->
+      <section class="main-page-home" id="home">
         <!-- tittle untuk page saat ini -->
         <div class="jumbotron">
-          <div class="tittle-page">
-            <h1>My Portofolio</h1>
-          </div>
-
-          <div class="image-1">
-            <img class="image-profile" src="/portofolio/assets-portofolio/IMG-20211215-WA0062.jpg" alt="Natalis Hurang" />
-          </div>
-
-          <div class="description">
-            <h3>Christianus Natalis Hurang</h3>
-            <p>Beginner | Software Engineer</p>
-          </div>
-
-          <div class="image-slideshow">
-            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide1.jpg" alt="slideshow 1" />
-            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide2.jpg" alt="slideshow 2" />
-            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide3.jpg" alt="slideshow 3" />
-            <img class="img-slideshow" src="/portofolio/assets-portofolio/slide4.jpg" alt="slideshow 4" />
-          </div>
-
-          <!-- button click -->
-          <div class="button-slideshow">
-            <button onclick="plusDivs(-1)">Previous</button>
-            <button onclick="plusDivs(1)">Next</button>
-          </div>
+          <img class="image-1" src="/portofolio/assets-portofolio/image1.jpg" alt="Natalis Hurang" />
+          <h2 class="my-name">Christianus Natalis Hurang</h2>
+          <p class="job-desk">Beginner | Software Engineer</p>
         </div>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="rgb(245, 171, 208)"
             fill-opacity="1"
-            d="M0,64L48,96C96,128,192,192,288,202.7C384,213,480,171,576,138.7C672,107,768,85,864,69.3C960,53,1056,43,1152,64C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+            d="M0,128L48,112C96,96,192,64,288,80C384,96,480,160,576,181.3C672,203,768,181,864,160C960,139,1056,117,1152,128C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
-      </div>
+      </section>
+      <!-- end of jumbotron -->
 
-      <div id="footer">
-        <p>Created by <a href="https://www.instagram.com/natalishurang1/"> Natalis Hurang </a>| in 2023</p>
-      </div>
-    </div>
+      <!-- about me -->
+      <section class="main-page-about" id="about">
+        <div class="container-about">
+          <div class="row">
+            <h3>About Me</h3>
+          </div>
+          <div class="row">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam atque beatae ut non laudantium exercitationem perferendis itaque est minima maiores?</p>
+          </div>
+          <div class="row">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end of about -->
+    </main>
 
     <!-- link ke javascript -->
     <script src="/portofolio/folder_js/interaksi_portofolio.js"></script>
